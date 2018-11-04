@@ -1,0 +1,9 @@
+<li class="burger-item">
+    <h3 class="burger-name">{{burger_name}}</h3>
+    {{#unless devoured}}
+    <button class="devour" type="button" data-id="{{id}}" data-devoured="{{devoured}}">
+        <h5>Devour!</h5>
+    </button>
+    {{/unless}}
+
+</li>
