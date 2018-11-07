@@ -1,7 +1,7 @@
 var mysql = require("mysql")
 require("dotenv").config;
 
-var connection = mysql.createConnection(process.env.JAWSDB_URL);
+// var connection = mysql.createConnection(process.env.JAWSDB_URL);
 var localConn= mysql.createConnection({
     host: "localhost", 
     port: 3306,
@@ -12,4 +12,4 @@ var localConn= mysql.createConnection({
 
 
 
-module.exports = connection
+module.exports = localConn;
